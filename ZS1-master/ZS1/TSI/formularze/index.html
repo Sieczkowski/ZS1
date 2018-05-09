@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+            <!--
+           Action - Atrybut
+            
+            metoda get- krótkie formularze, najlepiej do małej ilości danych
+            mało bezpieczne, wartości danych będą widoczne w adresie URL
+            Nie Stosować do wysyłu danych do bazy, SZYBSZY.
+            
+            metoda post - dane są wysyłane w nagłówkach HTTP przesyłanie dużych plików,
+            pry wysyłaniu haseł do wysyłania danych do bazy, bardziej bezpieczne HERE, wolniejszy.
+            
+            
+            
+            action, type, name - atrybut
+            text, get, post - wartość
+            input - element
+            
+            
+            
+            
+            -->
+   <form action="Megz.html" method="post" id="form1">
+      <fieldset>
+                 <legend> Dane: </legend>
+                  <input type="text" name="imie" size="10" maxlength="5" autofocus placeholder="Janusz" id="imie"> Imię
+              
+              <br>
+                <br>
+                 
+                  <input type="text" name="nazwisko" size="10" maxlength="5" autofocus placeholder="Kowal" id="imie"> Nazwisko
+              
+              
+              
+              
+              <br>
+              <br>
+                  <input type="text" name="szkola" size="10" placeholder="ZS1" readonly id="szkola"> Szkoła
+      
+              <br>
+              <br>
+      
+                  <input type="password" name="haslo" id="haslo" maxlength="20" size="10" placeholder="*********"> Hasło
+              <br>
+              <br>
+      
+                 
+                  <input type="submit" id="przycisk" value="Zatwierdź">
+                  
+                  <input type="reset">   
+       
+     </fieldset>  
+   </form>
+    
+    <form id="form2" action="Sandra.php">
+        <h3>Wybierz Kolor </h3>
+       <br>
+       
+        <input type="radio" name="kolor" value="biały"> biały
+        <br>
+        <input type="radio" name="kolor" value="czerwony" checked> czerwony
+        <br>
+        <input type="radio" name="kolor" value="zielony"> zielony
+        <br>
+        <input type="submit" name="przycisk2">
+        
+        
+        
+         </form>
+         <hr>
+         <form id="form3" action="imie.php">
+            <fieldset>
+            <legend> Wpisz Imię</legend>
+             <br>
+             <input type="radio" name="Imie" value="Megz"> Megz
+             <br>
+             <input type="radio" name="Imie" value="Olo" checked> Olo
+             <br>
+             <input type="radio" name="Imie" value="Łukasz"> Łukasz
+             <br>
+             <input type="submit" name="przycisk 3" value="wyślij imię">
+                    </fieldset>
+         </form>
+         
+         <form>
+             <br>
+             <input type="checkbox" value="rower" name="pojazd1"> Mam Rower
+            <br> 
+             <input type="checkbox" value="Samochód" name="pojazd1"> Mam Samochód
+            <br>
+              <input type="checkbox" value="Samolot" name="pojazd1"> Mam Samolot
+              <br>
+              <input type="submit" name="przycisk 4" >
+             
+         </form>
+         <hr>
+         <form>
+             <input type="color" name="color">
+             <br>
+             <input type="date" id="data" min="1900-01-01" max="2018-03-07" value="2000-10-1">
+             <br>
+             <input type="datetime-local">
+             <br> <br>
+             email <input type="email"> 
+             <br> <br>
+             imie <input type="text" pattern="[a-z],{2-25}">
+             <br> <br>
+             dodaj plik <input type="file"> 
+             <br> <br>
+             dodaj zdjecie <input type="image" > 
+             <br> <br>
+             miesiąc <input type="month">
+             <br> <br>
+             suwak <input type="range" min="0" max="5.3" step="1">
+             <br> <br>
+             suwak2 <input type="range" min="0" max="5.3" step="0.1">
+             <br> <br>
+             suwak3 <input type="range" min="0" max="5.3" step="any">
+             <br> <br>
+             <input type="submit" name="przycisk5">
+             
+         </form>
+         <hr>
+         <form>
+            Telefon <input type="tel"> 
+            <br><br>
+            Godzina <input type="time"> <br><br>
+            Tydzień <input type="week"> <br><br>
+             URL <input type="url" placeholder="http://wp.pl" size="30" minlenght="10" maxlength="80"> <br> <br> 
+             <input type="search" placeholder="wyszukaj stronę">
+             <input type="submit" value="szukaj" >
+             
+             
+         </form>
+</body>
+</html>
